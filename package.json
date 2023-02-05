@@ -1,0 +1,38 @@
+{
+  "name": "@padcom/create-vue-app",
+  "version": "0.0.1",
+  "description": "NPM project generator for Vue+TS+TailwindCSS+eslint+router+pinia+vueuse application",
+  "keywords": [
+    "npm"
+  ],
+  "author": "Matthias Hryniszak <padcom@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/padcom/create-vue-app#readme",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/padcom/create-vue-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/padcom/create-vue-app.git"
+  },
+  "bin": {
+    "create-vue-app": "cli.js"
+  },
+  "scripts": {
+    "templates": "npm run templates:app",
+    "templates:app": "tar cf template.tar -C templates/app .",
+    "prepublishOnly": "npm run templates && npm install"
+  },
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "inquirer": "^8.2.4",
+    "tar": "^6.1.13"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "os": [
+    "!win32"
+  ]
+}
