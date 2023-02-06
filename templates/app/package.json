@@ -8,11 +8,12 @@
     "build": "run-p type-check build-only",
     "preview": "vite preview",
     "test": "npm run test:unit",
+    "test:watch": "npm run test:unit:watch",
     "test:unit": "vitest run --environment jsdom --root src/",
     "test:unit:watch": "vitest watch --environment jsdom --root src/",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "lint": "eslint -c .eslintrc.cjs --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {

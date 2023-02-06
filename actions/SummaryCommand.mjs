@@ -17,6 +17,10 @@ export class SummaryCommand extends Action {
     console.log(chalk.green('$'), chalk.white('npm run lint\n'))
     console.log('or you can try fixing all the linter problems automatically:\n')
     console.log(chalk.green('$'), chalk.white('npm run lint:fix\n'))
+    console.log('You can also build a production-ready version of your app\n')
+    console.log(chalk.green('$'), chalk.white('npm run build\n'))
+    console.log('and then preview the app that was built:\n')
+    console.log(chalk.green('$'), chalk.white('npm run preview\n'))
 
     return { summaryDisplayed: true }
   }
