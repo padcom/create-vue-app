@@ -5,6 +5,7 @@ import { Question } from './actions/Question.mjs'
 import { InitGitRepositoryCommand } from './actions/InitGitRepositoryCommand.mjs'
 import { CreateApplicationFilesCommand } from './actions/CreateApplicationFilesCommand.mjs'
 import { InstallNpmDependenciesCommand } from './actions/InstallNpmDependenciesCommand.mjs'
+import { RunTestsCommand } from './actions/RunTestsCommand.mjs'
 import { FreezeNodeJsVersionWithNvmCommand } from './actions/FreezeNodeJsVersionWithNvmCommand.mjs'
 import { CreateReadmeCommand } from './actions/CreateReadmeCommand.mjs'
 import { SummaryCommand } from './actions/SummaryCommand.mjs'
@@ -19,6 +20,7 @@ const actions = [
   new InitGitRepositoryCommand(),
   new CreateApplicationFilesCommand(),
   new InstallNpmDependenciesCommand(),
+  new RunTestsCommand(),
   new Question('freezeNodeJsWithNvm', `Would you like to store current node.js version in ${chalk.yellow('.nvmrc')}?`),
   new FreezeNodeJsVersionWithNvmCommand(),
   new Question('createReadme', `How about a ${chalk.yellow('README.md')}?`),

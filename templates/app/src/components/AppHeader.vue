@@ -1,5 +1,5 @@
 <template>
-  <h1 class="app-header">Vue.js with friends!</h1>
+  <h1 class="app-header"><slot>Vue.js with friends!</slot></h1>
 </template>
 
 <style lang="postcss">
