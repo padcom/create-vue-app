@@ -1,6 +1,6 @@
 {
   "name": "@padcom/create-vue-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "NPM project generator for Vue+TS+TailwindCSS+eslint+router+pinia+vueuse application",
   "keywords": [
     "npm"
